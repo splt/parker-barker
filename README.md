@@ -1,8 +1,7 @@
 RAILS START APP
 ===============
   
-Includes:
----------
+### Includes:
 
 - HTML5 BOILERPLATE  
 - Active Admin  
@@ -10,8 +9,7 @@ Includes:
 - Paperclip  
 - S3 Hosting  
   
-Config:
--------
+### Config:
 
 1. Root (route.rb)
 2. S3 Repository (config/environments/production.rb)
