@@ -5,9 +5,30 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
-gem 'json'
+gem 'activeadmin'
+
+gem 'paperclip'
+gem 'aws-sdk'
+gem 'cocoon'
+
+gem 'friendly_id'
+
+
+#gem 'haml-rails'
+ 
+group :production do
+ gem 'unicorn'
+ gem 'newrelic_rpm'
+end
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'annotate'
+  gem 'thin'
+  gem 'rack-mini-profiler'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
