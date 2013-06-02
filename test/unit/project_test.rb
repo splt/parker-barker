@@ -6,7 +6,7 @@
 #  title               :string(255)
 #  url                 :string(255)
 #  description         :text
-#  kind                :string(255)
+#  job_title           :string(255)
 #  position            :integer
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null

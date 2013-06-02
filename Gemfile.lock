@@ -80,6 +80,13 @@ GEM
     formtastic (2.2.1)
       actionpack (>= 3.0)
     friendly_id (4.0.9)
+    haml (4.0.2)
+      tilt
+    haml-rails (0.4)
+      actionpack (>= 3.1, < 4.1)
+      activesupport (>= 3.1, < 4.1)
+      haml (>= 3.1, < 4.1)
+      railties (>= 3.1, < 4.1)
     has_scope (0.5.1)
     hike (1.2.2)
     httparty (0.9.0)
@@ -196,6 +203,7 @@ DEPENDENCIES
   cocoon
   coffee-rails (~> 3.2.1)
   friendly_id
+  haml-rails
   jquery-rails (= 2.3.0)
   newrelic_rpm
   paperclip

@@ -17,7 +17,7 @@ gem 'friendly_id'
 
 gem 'acts-as-taggable-on'
 
-#gem 'haml-rails'
+gem 'haml-rails'
  
 group :production do
  gem 'unicorn'

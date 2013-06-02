@@ -1,6 +1,6 @@
 <%= semantic_form_for [:admin, @project] do |f| %>
 
-<%= f.inputs :name => "Basic" do %>
+<%= f.inputs :name => "Project Details" do %>
   <%= f.input :job_title,  :as => :select,  :collection => ["Development", "Digital Production", "Production"] %>
   <%= f.input :title %>
 	<%= f.input :poster,  :as => :file %>
@@ -10,6 +10,20 @@
 
 <% end %>
 
+<%= f.inputs :name => "Images" do %>
+
+<div id="image">
+ 	
+	<%=  f.semantic_fields_for :project_image do |image| %>
+    <%= render 'project_image_fields', :f => image %>
+	<% end %>
+	
+	<div class="links">
+    <%= link_to_add_association 'add image', f, :project_image, :partial => 'admin/projects/project_image_fields' %>
+	</div>
+
+</div>
+<% end %>
 
 
 <%= f.actions %>

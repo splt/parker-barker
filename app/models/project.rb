@@ -6,7 +6,7 @@
 #  title               :string(255)
 #  url                 :string(255)
 #  description         :text
-#  kind                :string(255)
+#  job_title           :string(255)
 #  position            :integer
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
@@ -17,8 +17,10 @@
 #
 
 class Project < ActiveRecord::Base
+  has_many :project_image, :order => 'position'
+  accepts_nested_attributes_for :project_image, :allow_destroy => true
   
-  attr_accessible :description, :title, :url, :poster, :job_title, :tag_list
+  attr_accessible :description, :title, :url, :poster, :job_title, :tag_list, :project_image_attributes
   
   acts_as_taggable
    
