@@ -15,6 +15,7 @@ gem 'cocoon'
 
 gem 'friendly_id'
 
+gem 'acts-as-taggable-on'
 
 #gem 'haml-rails'
  

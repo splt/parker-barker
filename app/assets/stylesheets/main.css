@@ -93,20 +93,103 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+					html{
+						font-family: 'Roboto', sans-serif !important;
+						font-weight:300;
+					}
+					body{
+						color:#ffffff;
+						background:black;
+					}
+					.container{
+						padding-bottom: 1%;
+					}
+					a{
+						color:#ffffff;
+						text-decoration:none;
+					}
+					ul{
+						list-style:none;
+						margin:0;
+						padding:0;
+					}
+					aside{
+						height: 100%;
+						position: fixed;
+						
+						width: 30%;
+						min-width:260px;
+						padding-left: 20px;
+					}
+					aside h2{
+					
+					}
+					aside #languages{
+						width:260px;
+						margin-top:30px;
+					}
+					section{
+						position: relative;
+						margin-left:280px;
+						padding-left: 10px;
+						width: 70%;
+						padding-top: 13px;
+					}
+					section li{
+						margin-left:5px;
+						margin-bottom:5px;
+						display:inline-block;
+					}
+					section li img{
+						padding:2px;
+						border:1px solid white;
+					}
+					
+					article{
+						width:680px;
+						margin:0 auto;
+						font-size:0.8em !important;
+						
+					}
+					article #images{
+						height:400px;
+						background:#ffffff;
+						margin-bottom:-20px;
+					}
+					article footer{
+						margin:0;
+						padding:10px 0;
+						background:#3b3b3b;
+					}
+					article footer li{
+						display:inline-block;
+						padding:0;
+						margin:0;
+						vertical-align: top;
+					}
+					article .col_3{
+					}
+					article footer h3{
+						margin:0;
+						padding:0;
+					}
+					article footer #first{
+						width: 205px;
+						padding-right: 50px;
+						padding-left:5px;
+					}
+					article footer #second{
+						width:355px;
+						padding-left:10px;
+						border-left:1px white solid;
+					}
+					article footer #second .languages{
+						margin-bottom:5px;
+					}
+					article footer #third{
+						width:45px;
+						vertical-align:top;
+					}
 
 
 /* ==========================================================================

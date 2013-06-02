@@ -3,9 +3,10 @@ ParkerBarker::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-
+  
   root :to => 'projects#index'
   
+  match ':id' => 'projects#show'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

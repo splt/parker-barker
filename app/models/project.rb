@@ -18,7 +18,9 @@
 
 class Project < ActiveRecord::Base
   
-  attr_accessible :description, :title, :url, :poster, :job_title
+  attr_accessible :description, :title, :url, :poster, :job_title, :tag_list
+  
+  acts_as_taggable
    
    has_attached_file :poster, styles: {
       thumb: '250x250>',

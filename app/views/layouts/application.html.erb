@@ -18,7 +18,7 @@
 	<meta property="og:site_name" content=""/>
 	<meta property="og:type" content=""/>
 	<link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
-	
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 	<%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -30,13 +30,15 @@
   <![endif]-->
 
 	 <div id="container">
-		<%= render 'layouts/header' %>
-
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
-		
-		<%= yield %>
+		<%= render 'layouts/sidebar' %>
 
+		
+		<section>
+		<%= yield %>
+		</section>
+		
 		<%= render 'layouts/footer' %>
 	 </div>
 
