@@ -28,7 +28,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'annotate'
   gem 'thin'
-  #gem 'rack-mini-profiler'
+  gem 'rack-mini-profiler'
 end
 
 # Gems used only for assets and not required
