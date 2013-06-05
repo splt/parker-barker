@@ -5,7 +5,7 @@ ParkerBarker::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   
   root :to => 'projects#index'
-  
+  resources :projects, :only => [:index, :show]
   match ':id' => 'projects#show'
   
   # The priority is based upon order of creation:

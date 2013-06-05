@@ -16,11 +16,13 @@ input,
 select,
 textarea {
     color: #222;
+    background: black;
 }
 
 body {
     font-size: 1em;
     line-height: 1.4;
+    background: black;
 }
 
 /*
@@ -93,104 +95,177 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-					html{
-						font-family: 'Roboto', sans-serif !important;
-						font-weight:300;
-					}
-					body{
-						color:#ffffff;
-						background:black;
-					}
-					.container{
-						padding-bottom: 1%;
-					}
-					a{
-						color:#ffffff;
-						text-decoration:none;
-					}
-					ul{
-						list-style:none;
-						margin:0;
-						padding:0;
-					}
-					aside{
-						height: 100%;
-						position: fixed;
-						
-						width: 30%;
-						min-width:260px;
-						padding-left: 20px;
-					}
-					aside h2{
-					
-					}
-					aside #languages{
-						width:260px;
-						margin-top:30px;
-					}
-					section{
-						position: relative;
-						margin-left:280px;
-						padding-left: 10px;
-						width: 70%;
-						padding-top: 13px;
-					}
-					section li{
-						margin-left:5px;
-						margin-bottom:5px;
-						display:inline-block;
-					}
-					section li img{
-						padding:2px;
-						border:1px solid white;
-					}
-					
-					article{
-						width:680px;
-						margin:0 auto;
-						font-size:0.8em !important;
-						
-					}
-					article #images{
-						height:400px;
-						background:#ffffff;
-						margin-bottom:-20px;
-					}
-					article footer{
-						margin:0;
-						padding:10px 0;
-						background:#3b3b3b;
-					}
-					article footer li{
-						display:inline-block;
-						padding:0;
-						margin:0;
-						vertical-align: top;
-					}
-					article .col_3{
-					}
-					article footer h3{
-						margin:0;
-						padding:0;
-					}
-					article footer #first{
-						width: 205px;
-						padding-right: 50px;
-						padding-left:5px;
-					}
-					article footer #second{
-						width:355px;
-						padding-left:10px;
-						border-left:1px white solid;
-					}
-					article footer #second .languages{
-						margin-bottom:5px;
-					}
-					article footer #third{
-						width:45px;
-						vertical-align:top;
-					}
+	html{
+		font-family: 'Roboto', sans-serif !important;
+		font-weight:100 !important; 
+	}
+	body{
+		color:#ffffff;
+		background:black;
+	}
+	#container{
+		padding-bottom: 1%;
+        padding-top: 30px;
 
+	}
+	a{
+		color:#ffffff;
+		text-decoration:none;
+	}
+	ul{
+		list-style:none;
+		margin:0 !important;
+		padding:0 !important;
+	}
+	aside{
+		height: 100%;
+		position: fixed;
+		width: 30%;
+		min-width:260px;
+		padding-left: 45px;
+        padding-right: 10px;
+	}
+	aside h2{
+	   font-weight: 300;
+       text-transform: uppercase;
+	}
+	aside #languages{
+		width:230px;
+		margin-top:30px;
+        font-size: 0.9em;
+	}
+    aside nav{
+        font-size: 0.9em;
+    }
+	section{
+		position: relative;
+		margin-left:305px;
+		width: 70%;
+        min-width: 820px;
+		padding-top: 25px;
+        padding-left: 50px;
+	}
+	section li{
+		margin-left:10px;
+		margin-bottom:15px;
+		display:inline-block;
+        position: relative;
+        z-index: 1;
+	}
+    section li img{
+        width: 250px;
+        height: 165px;
+    }
+    section li .overlay{
+        display: none;
+    }
+    section li .background{
+        position: absolute;
+        z-index: 1;
+        top: 60%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: black;
+        opacity: 0.4;
+        width: 100%;
+        height: 40%;
+    }
+    section li .title{
+        color: white;
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        top: 63%;
+        left: 3%;
+        bottom: 0;
+        right: 0;
+        font-size: 0.9em;
+    }
+	section li img{
+		padding:2px;
+		border:1px solid white;
+	}
+
+    section #modal-overlay{
+        width: 750px;
+        margin:0 auto;
+        z-index: 999;
+    }
+    section #modal{
+        position: absolute;
+        top: 50%;
+        z-index: 999;
+    }
+    section #top_overlay{
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: black;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+	
+	article{
+		width:750px;
+		margin:0 auto;
+		font-size:0.8em !important;
+		
+	}
+	article #images{
+		height: 440px;
+		background:#ffffff;
+		margin-bottom:-20px;
+        color:red;
+	}
+    article span{
+        cursor: pointer;
+    }
+  
+
+	article footer{
+		margin:0;
+		padding:10px 0;
+		background:#3b3b3b;
+	}
+	article footer li{
+		display:inline-block;
+		padding:0;
+		margin:0;
+		vertical-align: top;
+	}
+	article .col_3{
+	}
+	article footer h3{
+		margin:0;
+		padding:0;
+	}
+	article footer #first{
+		width: 205px;
+		padding-right: 50px;
+		padding-left:5px;
+	}
+	article footer #second{
+		width:355px;
+		padding-left:10px;
+		border-left:1px white solid;
+	}
+	article footer #second .languages{
+		margin-bottom:5px;
+	}
+	article footer #third{
+		width:45px;
+		vertical-align:top;
+	}
+    .slide-container-size{
+       width:804px;
+    }   
 
 /* ==========================================================================
    Helper classes

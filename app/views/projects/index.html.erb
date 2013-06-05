@@ -1,29 +1,19 @@
-
-	
-		
 		<!-- START GRID -->
+		<div id="top_overlay"></div>
 		<ul>
-			<% @projects.each do |t| %>
-				<li><%= image_tag t.poster.url(:full) %></li>
+		<% @projects.each do |e| %>
+			<li>
+			<%= link_to  project_path(e), remote: true, :class => "modal_call" do %>
+			<%= image_tag e.poster(:full), :class => "over" %>
+			<div class="title overlay"><%= e.title %></div>
+			<div class="background overlay">&nbsp;</div>
 			<% end %>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>
-			<li><img src="http://placehold.it/220x220"></li>			
+			</li>
+		<% end %>
 		</ul>
-		
-	
+
+		<div id="modal-overlay">
+			<div id="modal">
+				
+			</div>
+		</div>

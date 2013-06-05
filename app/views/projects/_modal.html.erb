@@ -1,0 +1,37 @@
+<article id="dialog">
+	<div id="images">
+		<% @item.project_image.each do |e| %>
+			<%= image_tag e.image(:full) %>
+		<% end %>
+		<span class="slidesjs-previous slidesjs-navigation"></span> 
+		<span  class="slidesjs-next slidesjs-navigation"></span>
+	</div>
+	<footer>
+		<ul>
+			<li>	
+				<div id="first" class="col_3">
+					<h3><%= @item.title %></h3>
+					<a href=""><%= link_to @item.url, @item.url%></a>	
+				
+				</div>
+			</li>
+			<li>
+				<div id="second" class="col_3">
+					<div class="languages">
+						<%= tag_creator(@item.tags) %>
+					</div>
+					<%= @item.description %>
+				</div>
+			</li>
+			<li>
+				<div id="third" class="col_3">
+					<nav>
+						<span class="previous" onclick="slideAction(2)">&#060;</span>
+						<span class="next" onclick="slideAction(1)">&#062;</span>
+						<span class="close" onclick="slideAction(3)">X</a>
+					</nav>
+				</div>
+			</li>
+		</ul>
+	</footer>
+</article> 

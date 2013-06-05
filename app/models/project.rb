@@ -25,8 +25,8 @@ class Project < ActiveRecord::Base
   acts_as_taggable
    
    has_attached_file :poster, styles: {
-      thumb: '250x250>',
-      full: '350x197#'
+      thumb: '100x100>',
+      full: '250x165#'
     }
     # :storage => :s3,
     # :path => "/:attachment/:id/:style.:extension",

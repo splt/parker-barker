@@ -1,0 +1,24 @@
+$('#modal').html('<%= j render("modal") %>');
+
+
+
+$(function(){
+  
+  $("#images").slidesjs({
+    navigation: {
+	 active: false,
+       effect: "fade"
+    },
+    pagination: {
+   active: false,
+	},
+    effect: {
+      fade: {
+        speed: 400
+      }
+    }
+  });
+
+
+}); 
+// END READY

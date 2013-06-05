@@ -22,7 +22,7 @@ class ProjectImage < ActiveRecord::Base
   
   has_attached_file :image, styles: {
       thumb: '250x250>',
-      full: '350x197#'
+      full: '750x495#'
     }
     # :storage => :s3,
     # :path => "/:attachment/:id/:style.:extension",
