@@ -28,16 +28,23 @@ $(function(){
 
 
 	$(".modal_call").click(function() {
- 	 $('#top_overlay').show();
-
+ 		$('#top_overlay').show();
 	});
-	
-	$(document).keyup(function(e){
 
-	if(e.which == 27)
-	{
-	  slideAction(3);
-	}
+	$("#top_overlay").click(function() {
+ 		 slideAction(3);
+	});
+	$("aside").click(function() {
+ 		 slideAction(3);
+	});
+
+	
+	//Function will remove modal and overlay on ESC key press
+	$(document).keyup(function(e){
+		if(e.which == 27)
+		{
+		  slideAction(3);
+		}
 	});
 
 }); 

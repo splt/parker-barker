@@ -1,19 +1,18 @@
-		<!-- START GRID -->
-		<div id="top_overlay"></div>
-		<ul>
-		<% @projects.each do |e| %>
-			<li>
-			<%= link_to  project_path(e), remote: true, :class => "modal_call" do %>
-			<%= image_tag e.poster(:full), :class => "over" %>
-			<div class="title overlay"><%= e.title %></div>
-			<div class="background overlay">&nbsp;</div>
-			<% end %>
-			</li>
-		<% end %>
-		</ul>
+<!-- START GRID -->
+<div id="top_overlay"></div>
 
-		<div id="modal-overlay">
-			<div id="modal">
-				
-			</div>
-		</div>
+<ul>
+	<% @projects.each do |e| %>
+		<li>
+		<%= link_to  project_path(e), remote: true, :class => "modal_call" do %>
+		<%= image_tag e.poster(:full), :class => "over" %>
+		<div class="title overlay"><%= e.title %></div>
+		<div class="background overlay">&nbsp;</div>
+		<% end %>
+		</li>
+	<% end %>
+</ul>
+
+<div id="modal-overlay">
+	<div id="modal"></div>
+</div>

@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    sleep 1
+    #sleep 1
     @tags = Project.tag_counts_on(:tags)
     @projects = Project.all
     unless params[:id].nil?
