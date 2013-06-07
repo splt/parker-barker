@@ -64,7 +64,7 @@ function slideAction(i){
 		$('#top_overlay').hide();
 	}
 	else{
-		console.log( "slideAction return invalid param." );
+		console.log( "slideAction returned invalid param." );
 	}
 }
 

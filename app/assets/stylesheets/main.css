@@ -222,16 +222,18 @@ textarea {
 		height: 440px;
 		background:#ffffff;
 		margin-bottom:-20px;
-        color:red;
+        
 	}
     article span{
         cursor: pointer;
+        margin: 0 3px;
     }
   
 
 	article footer{
 		margin:0;
-		padding:10px 0;
+		padding-top: 10px;
+        padding-bottom: 15px;
 		background:#3b3b3b;
 	}
 	article footer li{
@@ -242,27 +244,37 @@ textarea {
 	}
 	article .col_3{
 	}
-	article footer h3{
+	article footer #title{
 		margin:0;
 		padding:0;
+        font-size: 15px !important;
+        font-weight: 100 !important;
 	}
 	article footer #first{
 		width: 205px;
 		padding-right: 50px;
-		padding-left:5px;
+        padding-left: 10px;
 	}
 	article footer #second{
-		width:355px;
-		padding-left:10px;
-		border-left:1px white solid;
+		width: 390px;
+        padding-left: 10px;
+        padding-right: 23px;
+        padding-bottom: 15px;
+        border-left: 1px white solid;
+        
 	}
 	article footer #second .languages{
 		margin-bottom:5px;
+        text-transform: uppercase;
 	}
 	article footer #third{
 		width:45px;
 		vertical-align:top;
+        padding-bottom: 15px;
 	}
+    article footer nav{
+        background: none;
+    }
     .slide-container-size{
        width:804px;
     }   
