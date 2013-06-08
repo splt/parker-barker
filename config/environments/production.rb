@@ -69,9 +69,13 @@ ParkerBarker::Application.configure do
     :storage => :s3,
     :s3_permissions => :public_read,
     :s3_credentials => {
-      :bucket => ENV[''],
-      :access_key_id => ENV[''],
-      :secret_access_key => ENV['']
+      #adding configs for heroku
+      #heroku config:set AWS_BUCKET=your_bucket_name
+      #heroku config:set AWS_ACCESS_KEY_ID=your_access_key_id
+      #heroku config:set AWS_SECRET_ACCESS_KEY=your_secret_access_key
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
 end
