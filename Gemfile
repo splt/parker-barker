@@ -18,16 +18,18 @@ gem 'friendly_id'
 gem 'acts-as-taggable-on'
 
 gem 'haml-rails'
+
+gem 'thin'
+
  
 group :production do
- gem 'unicorn'
  gem 'newrelic_rpm'
 end
 
 group :development, :test do
   gem 'sqlite3'
   gem 'annotate'
-  gem 'thin'
+  
   gem 'rack-mini-profiler'
 end
 
