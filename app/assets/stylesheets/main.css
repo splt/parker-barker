@@ -194,8 +194,8 @@ textarea {
         z-index: 999;
     }
     section #modal{
-        position: absolute;
-        top: 50%;
+        position: fixed;
+        top: 20%;
         z-index: 999;
     }
     section #top_overlay{
@@ -219,9 +219,9 @@ textarea {
 		
 	}
 	article #images{
-		height: 440px;
-		background:#ffffff;
-		margin-bottom:-20px;
+		height: 515px;
+        background: transparent;
+        margin-bottom: -20px;
         
 	}
     article span{
@@ -277,7 +277,13 @@ textarea {
     }
     .slide-container-size{
        width:804px;
-    }   
+    }
+    .slidesjs-container{
+        height: 495px !important;
+    }
+    .slidesjs-control{
+        height: 495px !important;
+    }
 
 /* ==========================================================================
    Helper classes

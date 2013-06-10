@@ -1,5 +1,10 @@
 <article id="dialog">
 	<div id="images">
+		<% unless @item.video.nil? %>
+			<div class="videoWrap">
+				<%= raw @item.video %>
+			</div>
+		<% end %>
 		<% @item.project_image.each do |e| %>
 			<%= image_tag e.image(:full) %>
 		<% end %>
@@ -11,7 +16,7 @@
 			<li>	
 				<div id="first" class="col_3">
 					<div id="title"><%= @item.title %></div>
-					<a href=""><%= link_to @item.url, @item.url%></a>	
+					<a href=""><%= link_to url_slice(@item), @item.url,  target: "_blank"%></a>	
 				
 				</div>
 			</li>

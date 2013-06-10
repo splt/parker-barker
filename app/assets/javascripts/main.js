@@ -1,6 +1,9 @@
 $(function(){
   
 	$("#images").slidesjs({
+		height: 750,
+		width: 495,
+		autoHeight: true,
 		navigation: {
 		 active: false,
 		   effect: "fade"
@@ -55,6 +58,8 @@ $(function(){
 function slideAction(i){
 	if (i == 1){
 		$(".slidesjs-next").trigger("click");
+		videoWrap = $('.videoWrap');
+   		videoWrap.html( videoWrap.html() );
 	}
 	else if( i == 2){
 		$(".slidesjs-previous").trigger("click"); 

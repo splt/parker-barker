@@ -20,7 +20,9 @@ class Project < ActiveRecord::Base
   has_many :project_image, :order => 'position'
   accepts_nested_attributes_for :project_image, :allow_destroy => true
   
-  attr_accessible :description, :title, :url, :poster, :job_title, :tag_list, :project_image_attributes
+  attr_accessible :description, :title, :url, 
+                  :poster, :job_title, :tag_list, 
+                  :video, :project_image_attributes
   
   acts_as_taggable
    
