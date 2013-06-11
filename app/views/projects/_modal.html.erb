@@ -1,6 +1,6 @@
 <article id="dialog">
 	<div id="images">
-		<% unless @item.video.nil? %>
+		<% if @item.video.nil? %>
 			<div class="videoWrap">
 				<%= raw @item.video %>
 			</div>
