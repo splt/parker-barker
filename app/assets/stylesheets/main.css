@@ -222,7 +222,7 @@ textarea {
 	article #images{
 		height: 515px;
         margin-bottom: -20px;
-        background: transparent url("../assets/loading.gif") center no-repeat !important
+        .background: transparent url("../assets/loading.gif") center no-repeat !important
         
 	}
 
