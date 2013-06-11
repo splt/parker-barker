@@ -29,8 +29,8 @@ class Project < ActiveRecord::Base
    has_attached_file :poster, styles: {
       thumb: '100x100>',
       full: '250x165#'
-    },
-    :storage => :s3,
-    :path => "/:attachment/:id/:style.:extension",
-    :s3_permissions => :public_read
+     }#,
+    # :storage => :s3,
+    # :path => "/:attachment/:id/:style.:extension",
+    # :s3_permissions => :public_read
 end
